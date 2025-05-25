@@ -171,10 +171,10 @@ const Index = () => {
       <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">
+            <h2 className="text-3xl font-bold text-blue-800 mb-4">
               Основные услуги
             </h2>
-            <p className="text-gray-600 max-w-2xl mx-auto">
+            <p className="text-blue-600 max-w-2xl mx-auto">
               Мы предоставляем полный спектр муниципальных услуг для жителей
               поселка Репино
             </p>
@@ -191,8 +191,12 @@ const Index = () => {
                       className="text-blue-600"
                     />
                   </div>
-                  <CardTitle className="text-xl">{service.title}</CardTitle>
-                  <CardDescription>{service.description}</CardDescription>
+                  <CardTitle className="text-xl text-blue-800">
+                    {service.title}
+                  </CardTitle>
+                  <CardDescription className="text-blue-600">
+                    {service.description}
+                  </CardDescription>
                 </CardHeader>
                 <CardContent>
                   <Button variant="outline" className="w-full">
