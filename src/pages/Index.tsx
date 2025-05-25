@@ -49,45 +49,49 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-white">
       {/* Header */}
-      <header className="bg-white border-b border-gray-200 sticky top-0 z-50">
+      <header className="bg-gradient-to-r from-violet-600 via-purple-600 to-indigo-600 border-b border-purple-200 sticky top-0 z-50 shadow-lg">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center space-x-3">
-              <div className="w-10 h-10 bg-blue-600 rounded-lg flex items-center justify-center">
+              <div className="w-10 h-10 bg-gradient-to-br from-yellow-400 to-orange-500 rounded-lg flex items-center justify-center shadow-md">
                 <Icon name="Building2" size={24} className="text-white" />
               </div>
               <div>
-                <h1 className="font-semibold text-gray-900">МО Репино</h1>
-                <p className="text-xs text-gray-500">Санкт-Петербург</p>
+                <h1 className="font-semibold text-white">МО Репино</h1>
+                <p className="text-xs text-purple-100">Санкт-Петербург</p>
               </div>
             </div>
             <nav className="hidden md:flex space-x-8">
               <a
                 href="#"
-                className="text-gray-700 hover:text-blue-600 font-medium"
+                className="text-white hover:text-yellow-300 font-medium transition-colors"
               >
                 Главная
               </a>
               <a
                 href="#"
-                className="text-gray-700 hover:text-blue-600 font-medium"
+                className="text-purple-100 hover:text-yellow-300 font-medium transition-colors"
               >
                 Услуги
               </a>
               <a
                 href="#"
-                className="text-gray-700 hover:text-blue-600 font-medium"
+                className="text-purple-100 hover:text-yellow-300 font-medium transition-colors"
               >
                 Новости
               </a>
               <a
                 href="#"
-                className="text-gray-700 hover:text-blue-600 font-medium"
+                className="text-purple-100 hover:text-yellow-300 font-medium transition-colors"
               >
                 Контакты
               </a>
             </nav>
-            <Button variant="outline" size="sm">
+            <Button
+              variant="outline"
+              size="sm"
+              className="border-white text-white hover:bg-white hover:text-purple-600"
+            >
               <Icon name="Phone" size={16} />
               Связаться
             </Button>
@@ -96,23 +100,31 @@ const Index = () => {
       </header>
 
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-blue-50 to-indigo-100 py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="relative bg-gradient-to-br from-purple-400 via-pink-500 to-red-500 py-20 overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
           <div className="text-center">
-            <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+            <h1 className="text-4xl md:text-5xl font-bold text-white mb-6 drop-shadow-lg">
               Добро пожаловать в поселок Репино
             </h1>
-            <p className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto">
+            <p className="text-xl text-white/90 mb-8 max-w-3xl mx-auto drop-shadow">
               Внутригородское муниципальное образование города федерального
               значения Санкт-Петербурга. Живописный уголок на берегу Финского
               залива с богатой историей и развитой инфраструктурой.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="bg-blue-600 hover:bg-blue-700">
+              <Button
+                size="lg"
+                className="bg-gradient-to-r from-yellow-400 to-orange-500 hover:from-yellow-500 hover:to-orange-600 text-white shadow-lg"
+              >
                 <Icon name="FileText" size={20} />
                 Услуги для граждан
               </Button>
-              <Button variant="outline" size="lg">
+              <Button
+                variant="outline"
+                size="lg"
+                className="border-white text-white hover:bg-white hover:text-purple-600"
+              >
                 <Icon name="MapPin" size={20} />
                 Контакты и адреса
               </Button>
