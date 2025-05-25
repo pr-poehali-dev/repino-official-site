@@ -100,34 +100,68 @@ const Index = () => {
       </header>
 
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-purple-400 via-pink-500 to-red-500 py-20 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+      <section className="relative bg-gradient-to-br from-blue-400 via-cyan-500 to-teal-500 py-20 overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
-          <div className="text-center">
-            <h1 className="text-4xl md:text-5xl font-bold text-white mb-6 drop-shadow-lg">
-              Добро пожаловать в поселок Репино
-            </h1>
-            <p className="text-xl text-white/90 mb-8 max-w-3xl mx-auto drop-shadow">
-              Внутригородское муниципальное образование города федерального
-              значения Санкт-Петербурга. Живописный уголок на берегу Финского
-              залива с богатой историей и развитой инфраструктурой.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button
-                size="lg"
-                className="bg-gradient-to-r from-yellow-400 to-orange-500 hover:from-yellow-500 hover:to-orange-600 text-white shadow-lg"
-              >
-                <Icon name="FileText" size={20} />
-                Услуги для граждан
-              </Button>
-              <Button
-                variant="outline"
-                size="lg"
-                className="border-white text-white hover:bg-white hover:text-purple-600"
-              >
-                <Icon name="MapPin" size={20} />
-                Контакты и адреса
-              </Button>
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            {/* Left side - Coat of Arms and Title */}
+            <div className="text-center lg:text-left">
+              <div className="flex items-center justify-center lg:justify-start mb-6">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Coat_of_Arms_of_Repino_%28St_Petersburg%29.svg/200px-Coat_of_Arms_of_Repino_%28St_Petersburg%29.svg.png"
+                  alt="Герб поселка Репино"
+                  className="w-20 h-24 mr-4 drop-shadow-lg"
+                />
+                <div>
+                  <h1 className="text-4xl md:text-5xl font-bold text-white mb-2 drop-shadow-lg">
+                    Репино
+                  </h1>
+                  <p className="text-lg text-white/90 drop-shadow">
+                    Поселок на Финском заливе
+                  </p>
+                </div>
+              </div>
+              <p className="text-lg text-white/90 mb-8 drop-shadow">
+                Внутригородское муниципальное образование города федерального
+                значения Санкт-Петербурга. Живописный уголок на берегу Финского
+                залива с богатой историей и развитой инфраструктурой.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                <Button
+                  size="lg"
+                  className="bg-gradient-to-r from-yellow-400 to-orange-500 hover:from-yellow-500 hover:to-orange-600 text-white shadow-lg"
+                >
+                  <Icon name="FileText" size={20} />
+                  Услуги для граждан
+                </Button>
+                <Button
+                  variant="outline"
+                  size="lg"
+                  className="border-white text-white hover:bg-white hover:text-purple-600"
+                >
+                  <Icon name="MapPin" size={20} />
+                  Контакты и адреса
+                </Button>
+              </div>
+            </div>
+
+            {/* Right side - Photos Grid */}
+            <div className="grid grid-cols-2 gap-4">
+              <img
+                src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=400&h=300&fit=crop"
+                alt="Финский залив в Репино"
+                className="rounded-lg shadow-lg w-full h-48 object-cover"
+              />
+              <img
+                src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&h=300&fit=crop"
+                alt="Природа Репино"
+                className="rounded-lg shadow-lg w-full h-48 object-cover"
+              />
+              <img
+                src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=400&h=300&fit=crop"
+                alt="Лесопарк в Репино"
+                className="rounded-lg shadow-lg w-full h-48 object-cover col-span-2"
+              />
             </div>
           </div>
         </div>
